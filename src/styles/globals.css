@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Permanent+Marker&family=Sacramento&family=Satisfy&display=swap');
+
+body {
+  background: black
+  
+}
+
+.mainbanner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-image: url("https://img.freepik.com/free-photo/beautiful-kitchen-interior-design_23-2150976532.jpg?t=st=1704864225~exp=1704867825~hmac=f7917353b46cf71f80a4dd7cc84bc9959d0841cedb3283847c75a8434d3701ae&w=996");
+}
+
+.login1 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://img.freepik.com/premium-photo/indian-hindu-veg-thali-food-platter-selective-focus_466689-35929.jpg?w=740");
+
+}
+
+h4 {
+  font-family: 'Satisfy', cursive;
+}
+
+.righticon {
+  border-radius: 100px 0px 0px 100px;
+  box-shadow: 100px red;
+}
+
+.wrapper{
+  background: rgba(232, 216, 216, 0.192);
+  /* backdrop-filter: blur(1px); */
+}
+.cssbuttons-io-button {
+  background: orange;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  /* border-radius: 0.9em; */
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  /* box-shadow: inset 0 0 1.6em -0.6em #714da6; */
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 20px; 
+  /* box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9; */
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+#checkbox {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: rgb(46, 46, 46);
+  border-radius: 50px;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  font-size: 0.9em;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.switch svg path {
+  fill: white;
+}
+#checkbox:checked + .switch {
+  background-color: green;
+  box-shadow: 0px 0px 40px rgba(174, 0, 255, 0.438);
+}
